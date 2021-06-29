@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ScoreCounter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imageswrapper">
+        <div>
+          <input
+            type="file"
+            accept="image/*"
+            name="image"
+            id="file"
+            onchange="loadFile(event)"
+          />
+        </div>
+        <div class="input1 image123"><img id="output" width="200" /></div>
+        <div>
+          <input
+            type="file"
+            accept="image/*"
+            name="image"
+            id="file2"
+            onchange="loadFile2(event)"
+          />
+        </div>
+        <div class="input2 image123"><img id="output2" width="200" /></div>
+      </div>
+      <div class="scoreWrapper">
+        <button onclick="Increment1()">+1</button>
+        <div class="scores">
+          <div class="score1">
+            <h1>Score is : <span id="Increment1"></span></h1>
+          </div>
+          <div class="score2">
+            <h1>
+              Score is :
+              <span id="Increment2"></span>
+            </h1>
+          </div>
+        </div>
+        <button onclick="Increment2()">+1</button>
+      </div>
+    </div>
+    <script>
+      score1 = 0;
+      score2 = 0;
+      var loadFile = function (event) {
+        var image = document.getElementById("output");
+        var file = document.getElementById("file");
+        image.src = URL.createObjectURL(event.target.files[0]);
+        image.style.display = "block";
+        file.style.display = "none";
+      };
+      var loadFile2 = function (event) {
+        var image = document.getElementById("output2");
+        var file = document.getElementById("file2");
+        image.src = URL.createObjectURL(event.target.files[0]);
+        image.style.display = "block";
+        file.style.display = "none";
+      };
+      function Increment1() {
+        var ScoreElement = document.getElementById("Increment1");
+        score1 += 1;
+        ScoreElement.innerHTML = score1;
+      }
+      function Increment2() {
+        var ScoreElement2 = document.getElementById("Increment2");
+        score2 += 1;
+        ScoreElement2.innerHTML = score2;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10;
+    background: coral;
+}
+.container{
+    margin: 10px;
+}
+.scoreWrapper{
+    display: grid;
+    place-content:inherit;
+    margin: 10px;
+
+}
+.scores{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+
+}
+.imageswrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+img{
+    border-radius:40px ;
+}
+button{
+    outline: none;
+    border: none;
+}
+
+@media screen {
+    
+}
