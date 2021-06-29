@@ -29,7 +29,9 @@ body{
     margin-bottom: 40px;
     color: white;
 }
-
+img{
+    border-radius: 20px;
+}
 input[type="file"] {
     display: none;
 }
