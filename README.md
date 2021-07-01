@@ -9,3 +9,10 @@ Version(1.2)
 ![image](https://user-images.githubusercontent.com/65584840/123774036-af4df200-d8ea-11eb-9b7c-ee4c5e1fab46.png)
 Original Version(First built 1.0)
 ![image](https://user-images.githubusercontent.com/65584840/123740671-6e43e680-d8c6-11eb-8040-847a1b0a35ba.png)
+
+
+>Disclaimer :
+
+
+>This website is a scorecounter site which focuses on functionality and easy visuality.
+>Users may use website for any purpose at their own risk.
