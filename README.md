@@ -1,5 +1,8 @@
 # ScoreCounter
-Latest Version(1.3)
+Latest Version(1.4)
+![image](https://user-images.githubusercontent.com/65584840/124099532-40ec6980-da7b-11eb-937d-30feceb6613e.png)
+
+Version(1.3)
 ![image](https://user-images.githubusercontent.com/65584840/123801445-ebdc1680-d907-11eb-8c50-ad56e68ecace.png)
 
 Version(1.2)
