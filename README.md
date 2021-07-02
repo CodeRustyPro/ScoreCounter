@@ -2,7 +2,7 @@
 
 
 Latest Updates : 
->1. Version 1.5 out of 2/7/2021 ! Stay tuned🔔🔔
+>1. Version 1.5 out 9:30 am Friday, Greenwich Mean Time (GMT) ! Stay tuned🔔🔔
 >2. Suggestions our appreciated in new✨ Discussions tab.
 >3. Site is currently up and running
 >4. Version 1.5 is in development built
