@@ -1,4 +1,12 @@
 # ScoreCounter
+
+
+Latest Updates : 
+>1. Version 1.5 out of 2/7/2021 ! Stay tuned🔔🔔
+>2. Suggestions our appreciated in new✨ Discussions tab.
+>3. Site is currently up and running
+>4. Version 1.5 is in development built
+
 Latest Version(1.4)
 ![image](https://user-images.githubusercontent.com/65584840/124099532-40ec6980-da7b-11eb-937d-30feceb6613e.png)
 
