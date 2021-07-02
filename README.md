@@ -5,9 +5,6 @@ Latest Updates :
 >1. Version 1.5 is [out](coderustypro.github.io/scorecounter/) !🚀
 >2. Suggestions our appreciated in new✨ Discussions tab.
 >3. Kindly try version 1.5 and share your feedback in the [discussions tab](https://github.com/CodeRustyPro/ScoreCounter/discussions)
-
-# Site Status 
-> ✔
 # Latest Version(1.5)
 ![image](https://user-images.githubusercontent.com/65584840/124254583-d6a0fb00-db46-11eb-943a-727e0f244358.png)
 ![image](https://user-images.githubusercontent.com/65584840/124254825-18ca3c80-db47-11eb-9e29-64f3cbf93f41.png)
@@ -33,3 +30,5 @@ Latest Updates :
 
 >This website is a scorecounter site which focuses on functionality and easy visuality.
 >Users may use website for any purpose at their own risk.
+# Site Status 
+> ✔
