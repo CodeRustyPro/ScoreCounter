@@ -63,16 +63,23 @@
         <button onclick="Increment2()">+2</button
         ><button onclick="Decrement2()">-1</button>
       </div>
-      <div class="settings">
-        <label for="fonts">Choose Font : </label>
+      <div class="settingscontainer" id="settingscontainer">
+        <div class="settings" id="settings">
+          <label for="fonts">Choose Font : </label>
+  
+          <select name="fonts" id="fonts" onchange="FontChange()">
+            <option value="1">Cedarville Cursive</option>
+            <option value="2" >Jomhuria</option>
+            <option value="3">IndieFlower</option>
+            <option value="4" selected>Big Shoulders</option>
+            <option value="5">Quicksand</option>
+          </select>
+        </div>
+      </div>
 
-        <select name="fonts" id="fonts" onchange="FontChange()">
-          <option value="1">Cedarville Cursive</option>
-          <option value="2" >Jomhuria</option>
-          <option value="3">IndieFlower</option>
-          <option value="4" selected>Big Shoulders</option>
-          <option value="5">Quicksand</option>
-        </select>
+      
+      <div class="toggleSettings">
+        <button onclick="toggleSettings()">Show Settings</button>
       </div>
     </div>
     <script>
@@ -139,6 +146,11 @@
         scoreFont= document.getElementById("scores").style.fontFamily = "";
 
       }
+      }
+      function toggleSettings() {
+        settings = document.getElementById("settingscontainer");
+        settings.classList.toggle("hidden");
+
       }
 
 

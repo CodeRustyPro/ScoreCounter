@@ -18,6 +18,24 @@ body{
     font-family: 'Big Shoulders Stencil Display', cursive;
     
 }
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #3b4eff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(69, 48, 255);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 .container{
     margin: 10px;
 }
@@ -83,7 +101,7 @@ button{
     background: rgba(198, 252, 5, 0.278);
 }
 .settings{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     color: white;
@@ -102,4 +120,28 @@ button{
     border-radius: 120px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgba(3, 191, 204, 0.278);
+}
+.toggleSettings{
+    opacity: .3;
+    color: white;
+    font-family: QuickSand;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    margin-top: 3rem;
+}
+.hidden{
+    display: none !important;
+}
+.toggleSettings button{
+    cursor: pointer;
+    padding: 2px 2px;
+    background: transparent;
+    position: relative;
+}
+.settingscontainer{
+    display: flex;
+    justify-content: space-around;
+
 }
