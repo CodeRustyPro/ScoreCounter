@@ -71,6 +71,7 @@
           <option value="2" >Jomhuria</option>
           <option value="3">IndieFlower</option>
           <option value="4" selected>Big Shoulders</option>
+          <option value="5">Quicksand</option>
         </select>
       </div>
     </div>
@@ -129,6 +130,10 @@
       }
       else if(value==3){
         scoreFont= document.getElementById("scores").style.fontFamily = "'Indie Flower', cursive";
+      }
+      else if(value==5){
+        scoreFont= document.getElementById("scores").style.fontFamily = "'Quicksand', sans-serif";
+        
       }
       else{
         scoreFont= document.getElementById("scores").style.fontFamily = "";
