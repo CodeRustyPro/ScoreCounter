@@ -46,7 +46,7 @@
       </div>
       <div class="scoreWrapper">
         <div class="scores" id="scores">
-          <div class="score1" >
+          <div class="score1">
             <h1>Score is : <span id="Increment1">0</span></h1>
           </div>
           <div class="score2">
@@ -66,18 +66,30 @@
       <div class="settingscontainer" id="settingscontainer">
         <div class="settings" id="settings">
           <label for="fonts">Choose Font : </label>
-  
+
           <select name="fonts" id="fonts" onchange="FontChange()">
             <option value="1">Cedarville Cursive</option>
-            <option value="2" >Jomhuria</option>
+            <option value="2">Jomhuria</option>
             <option value="3">IndieFlower</option>
             <option value="4" selected>Big Shoulders</option>
             <option value="5">Quicksand</option>
           </select>
         </div>
+        <div class="result">
+          <button id="submit">Submit</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Hurray !</p>
+            <p id="winlose"></p>
+          </div>
+        </div>
       </div>
 
-      
       <div class="toggleSettings">
         <button onclick="toggleSettings()">Show Settings</button>
       </div>
@@ -119,41 +131,66 @@
         score1 = score1 - 1;
         ScoreElement2.innerHTML = score1;
       }
-      function FontChange(){
+      function FontChange() {
         var e = document.getElementById("fonts");
-      var value=e.options[e.selectedIndex].value;// get selected option value
-      var text=e.options[e.selectedIndex].text;
-      console.log(e,value,text);  
-      if (value==1){
-        scoreFont= document.getElementById("scores").style.fontFamily = "'Cedarville Cursive', cursive";
-      }
-      else if(value==2){
-        scoreFont= document.getElementById("scores").style.fontFamily = "'Jomhuria',cursive";
-        scoreFont= document.getElementById("scores").style.letterSpacing = "4px";
-        scoreFont= document.getElementById("scores").style.fontWeight = "100";
-        scoreFont= document.getElementById("scores").style.textEmphasis = "none";
-
-
-      }
-      else if(value==3){
-        scoreFont= document.getElementById("scores").style.fontFamily = "'Indie Flower', cursive";
-      }
-      else if(value==5){
-        scoreFont= document.getElementById("scores").style.fontFamily = "'Quicksand', sans-serif";
-        
-      }
-      else{
-        scoreFont= document.getElementById("scores").style.fontFamily = "";
-
-      }
+        var value = e.options[e.selectedIndex].value; // get selected option value
+        var text = e.options[e.selectedIndex].text;
+        console.log(e, value, text);
+        if (value == 1) {
+          scoreFont = document.getElementById("scores").style.fontFamily =
+            "'Cedarville Cursive', cursive";
+        } else if (value == 2) {
+          scoreFont = document.getElementById("scores").style.fontFamily =
+            "'Jomhuria',cursive";
+          scoreFont = document.getElementById("scores").style.letterSpacing =
+            "4px";
+          scoreFont = document.getElementById("scores").style.fontWeight =
+            "100";
+          scoreFont = document.getElementById("scores").style.textEmphasis =
+            "none";
+        } else if (value == 3) {
+          scoreFont = document.getElementById("scores").style.fontFamily =
+            "'Indie Flower', cursive";
+        } else if (value == 5) {
+          scoreFont = document.getElementById("scores").style.fontFamily =
+            "'Quicksand', sans-serif";
+        } else {
+          scoreFont = document.getElementById("scores").style.fontFamily = "";
+        }
       }
       function toggleSettings() {
         settings = document.getElementById("settingscontainer");
         settings.classList.toggle("hidden");
-
       }
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("submit");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+        var ScoreElement1 = document.getElementById("Increment1");
+        var ScoreElement2 = document.getElementById("Increment2");
+        var winlose = document.getElementById("winlose");
 
+        console.log(ScoreElement1.innerHTML,ScoreElement2.innerHTML)
+        if(ScoreElement1.innerHTML > ScoreElement2.innerHTML){
+          winlose.innerHTML = "Player 1 Won ! Hurray ";
+        }
+        else if(ScoreElement1.innerHTML < ScoreElement2.innerHTML){
+          winlose.innerHTML = "Player 2 Won ! Hurray ";
+        }
+        else{
+          winlose.innerHTML = "Tough Match ! Its a draw"
+        }
+      };
 
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
