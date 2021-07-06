@@ -2,7 +2,7 @@
 
 
 Latest Updates : 
->1. Version 1.5 is [out](coderustypro.github.io/scorecounter/) !🚀
+>1. Version 1.5 is [out](https://coderustypro.github.io/scorecounter/) !🚀
 >2. Suggestions our appreciated in new✨ Discussions tab.
 >3. Kindly try version 1.5 and share your feedback in the [discussions tab](https://github.com/CodeRustyPro/ScoreCounter/discussions)
 # Latest Version(1.5)
