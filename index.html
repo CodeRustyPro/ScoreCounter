@@ -86,6 +86,7 @@
             <span class="close">&times;</span>
             <p>Hurray !</p>
             <p id="winlose"></p>
+            <img src="trophy.png" alt="Winner" id="trophy1">
           </div>
         </div>
       </div>
@@ -170,16 +171,24 @@
         var ScoreElement1 = document.getElementById("Increment1");
         var ScoreElement2 = document.getElementById("Increment2");
         var winlose = document.getElementById("winlose");
+        var WINNER = new Audio("win.mp3");
+        WINNER.play();
 
         console.log(ScoreElement1.innerHTML,ScoreElement2.innerHTML)
         if(ScoreElement1.innerHTML > ScoreElement2.innerHTML){
           winlose.innerHTML = "Player 1 Won ! Hurray ";
+          var trophyImage = document.getElementById("trophy1");
+          trophyImage.src="trophy.png";
         }
         else if(ScoreElement1.innerHTML < ScoreElement2.innerHTML){
           winlose.innerHTML = "Player 2 Won ! Hurray ";
+          var trophyImage = document.getElementById("trophy1");
+          trophyImage.src="trophy.png";
         }
         else{
           winlose.innerHTML = "Tough Match ! Its a draw"
+          var trophyImage = document.getElementById("trophy1");
+          trophyImage.src="draw.png";
         }
       };
 
