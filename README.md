@@ -2,19 +2,24 @@
 
 
 Latest Updates : 
->1. Version 1.5 is [out](https://coderustypro.github.io/scorecounter/) !🚀
+>1. Version 1.6 is [out](https://coderustypro.github.io/scorecounter/) !🚀
 >2. Suggestions our appreciated in new✨ Discussions tab.
->3. Kindly try version 1.5 and share your feedback in the [discussions tab](https://github.com/CodeRustyPro/ScoreCounter/discussions)
-# Latest Version(1.5)
+>3. Kindly try version 1.6 and share your feedback in the [discussions tab](https://github.com/CodeRustyPro/ScoreCounter/discussions)
+# Latest Version(1.6)
+![image](https://user-images.githubusercontent.com/65584840/124698474-90f97f00-df06-11eb-88a9-5ec90bff5da8.png)
+![image](https://user-images.githubusercontent.com/65584840/124698502-9eaf0480-df06-11eb-88fc-5927291de5e9.png)
+
+# 
+# Version(1.5)
 ![image](https://user-images.githubusercontent.com/65584840/124254583-d6a0fb00-db46-11eb-943a-727e0f244358.png)
 ![image](https://user-images.githubusercontent.com/65584840/124254825-18ca3c80-db47-11eb-9e29-64f3cbf93f41.png)
 
-
+# 
 # Version(1.4)
 
 ![image](https://user-images.githubusercontent.com/65584840/124099532-40ec6980-da7b-11eb-937d-30feceb6613e.png)
 
-#Version(1.3)
+# Version(1.3)
 >
 ![image](https://user-images.githubusercontent.com/65584840/123801445-ebdc1680-d907-11eb-8c50-ad56e68ecace.png)
 
